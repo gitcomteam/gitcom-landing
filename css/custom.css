@@ -13,3 +13,9 @@
 .horizontal-sm-margin {
     margin: 0 10px !important;
 }
+
+@media only screen and (min-width: 770px)  {
+    .feature-block {
+        min-height: 300px;
+    }
+}
