@@ -1,0 +1,15 @@
+.full-width {
+    width: 100% !important;
+}
+
+.full-height {
+    height: 100% !important;
+}
+
+.margin-sm-top {
+    margin-top: 25px !important;
+}
+
+.horizontal-sm-margin {
+    margin: 0 10px !important;
+}
