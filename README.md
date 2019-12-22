@@ -1,1 +1,1 @@
-# openhub-landing
+# gitcom landing page
