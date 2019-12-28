@@ -32,6 +32,19 @@
     background-color: #472bc9;
 }
 
+.auto-height {
+    height: auto !important;
+}
+
+.ftco-section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.ftco-section.ftco-section-2 {
+    padding: 3em 0 !important;
+}
+
 @media only screen and (min-width: 770px)  {
     .feature-block {
         min-height: 300px;
