@@ -10,6 +10,10 @@
     margin-top: 25px !important;
 }
 
+.margin-sm-sides {
+    margin: 0 10px !important;
+}
+
 .horizontal-sm-margin {
     margin: 0 10px !important;
 }
@@ -17,5 +21,11 @@
 @media only screen and (min-width: 770px)  {
     .feature-block {
         min-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 770px)  {
+    .mobile-only {
+        display: none;
     }
 }
