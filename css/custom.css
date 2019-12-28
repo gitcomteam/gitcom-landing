@@ -18,6 +18,20 @@
     margin: 0 10px !important;
 }
 
+.flex-center {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.btn-primary {
+    transition: .7s;
+}
+
+.btn-primary:hover {
+    transition: .7s;
+    background-color: #472bc9;
+}
+
 @media only screen and (min-width: 770px)  {
     .feature-block {
         min-height: 300px;
