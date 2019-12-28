@@ -63,7 +63,10 @@
                     </li>
                     <li class="nav-item">
                         <a href="https://discordapp.com/invite/fF4sVuW" class="nav-link icon d-flex align-items-center">
-                            <img class="margin-sm-sides" src="icons/discord-icon.svg" alt="Discord icon" style="width: 23px; height: 36px;"/>
+                            <img
+                                    class="margin-sm-sides" src="icons/discord-icon.svg" alt="Discord icon"
+                                    style="width: 23px; height: 36px; -webkit-filter: invert(0.5); filter: invert(0.5);"
+                            />
                             <div class="mobile-only">Join our Discord channel!</div>
                         </a>
                     </li>
@@ -400,9 +403,9 @@
                         <i class="ion-ios-paper-plane"></i>
                       </span>
                         </div>
-                        <input type="email" class="form-control" placeholder="Email...">
+                        <input id="subscriptionEmailInput" type="email" class="form-control" placeholder="Email...">
                     </div>
-                    <a href="#" class="btn btn-primary">Keep me posted</a>
+                    <div id="mailingListSubscribeBtn" onclick="subscribeToMailingList()" class="btn btn-primary">Keep me posted</div>
                 </div>
             </div>
         </div>
@@ -450,6 +453,13 @@
 <script src="js/moment-with-locales.min.js"></script>
 <script src="js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    function subscribeToMailingList() {
+        $("#mailingListSubscribeBtn").html("You're subscribed now!");
+        $.post("https://api.gitcom.org/api/v1/mailing_list/subscribe?email=" + $("#subscriptionEmailInput").val());
+    }
+</script>
 
 </body>
 </html>
