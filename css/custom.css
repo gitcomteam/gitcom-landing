@@ -45,14 +45,22 @@
     padding: 3em 0 !important;
 }
 
+.row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
 @media only screen and (min-width: 770px)  {
     .feature-block {
         min-height: 300px;
     }
-}
-
-@media only screen and (min-width: 770px)  {
     .mobile-only {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 770px)  {
+    .menu-tab-icon {
+        padding: 0 3px;
     }
 }
