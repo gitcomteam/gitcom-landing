@@ -137,7 +137,7 @@
                                         <input id="fastSignInEmail" type="email" class="form-control" placeholder="Email...">
                                     </div>
                                     <div class="input-group mb-3 flex-center">
-                                        <a href="https://gitcom.org/login" class="btn btn-primary px-4 mb-4">
+                                        <a id="signInLink" href="https://gitcom.org/login" class="btn btn-primary px-4 mb-4">
                                             <i class="ion-ios-log-in mr-2"></i> Sign in
                                         </a>
                                     </div>
@@ -453,6 +453,12 @@
         $("#mailingListSubscribeBtn").html("You're subscribed now!");
         $.post("https://api.gitcom.org/api/v1/mailing_list/subscribe?email=" + $("#subscriptionEmailInput").val());
     }
+
+    $(document).ready(function() {
+        $("#fastSignInEmail").keypress(function(e) {
+            $("a#signInLink").attr("href", "https://gitcom.org/login?email=" + $(e.target).val());
+        });
+    });
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
