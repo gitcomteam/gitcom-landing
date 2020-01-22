@@ -1,3 +1,3 @@
 # GitCom landing page
 
-Open project deployed to [GitHub pages](https://gitcomteam.github.io/gitcom-landing/)
+This landing page is deployed to [GitHub pages](https://gitcomteam.github.io/gitcom-landing/)
